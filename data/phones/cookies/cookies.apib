@@ -1,0 +1,16 @@
+# Cookie Storage
+How we store information in cookies. (Concept)
+
+
+| Cookie Name | Storage type                                   |
+| ----------- | ---------------------------------------------- |
+| wp_data     | `base64` encoded `JSON` (Ref: `wp_data` table) |
+
+## wp_data
+
+| Param   | Description                         | Value type | Example value                    |
+| ------- | ----------------------------------- | ---------- | -------------------------------- |
+| price   | Range of min and max prices         | `Array`    | `[350, 700]`                     |
+| sc_size | Range of screen sizes               | `Array`    | `[5.0, 6.5]`                     |
+| os      | List of available OS's              | `Array`    | `['ios', 'android', 'winphone']` |
+| md_year | Range of model years                | `Array`    | `[2015, 2017]`                   |
